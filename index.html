@@ -4,16 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio website of TEJA - Front-End Developer and Security Analyst">
     <title>Welcome To My Portfolio</title>
 
     <!-- CSS link -->
-    <link rel="stylesheet" href="/styles/main.css">
-    <!-- Font Awesone Icons -->
+    <link rel="stylesheet" href="/main.css">
+    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
 </head>
 
 <body>
-
     <nav class="nav-container">
         <a href="#" class="logo">LOGO</a>
         <a href="#about" class="about-link">About</a>
@@ -37,21 +38,28 @@
     <!-- About Me Section -->
     <section class="about" id="about">
         <div class="about-text">
+            <h2>About Me</h2>
+            <p>I'm a passionate Front-End Developer and Security Analyst with a keen eye for detail and a commitment to
+                creating secure, user-friendly web applications.</p>
         </div>
         <div class="profile-image">
-        </div>
-    </section>
-
-
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <div class="services-container">
+            <!-- Add your profile image here -->
+            <img src="path-to-your-image.jpg" alt="TEJA - Front-End Developer and Security Analyst">
         </div>
     </section>
 
     <!-- Contact Me Section -->
     <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p>Get in touch with me for any web development or security analysis needs.</p>
+        <a href="mailto:your.email@example.com" class="contact-button">Email Me</a>
     </section>
+
+    <!-- Toggle Switch -->
+    <div id="theme-toggle" class="toggle-switch" role="switch" aria-checked="false" tabindex="0"
+        aria-label="Toggle dark mode">
+        <div class="toggle-switch-handle"></div>
+    </div>
 
     <!-- JavaScript Link -->
     <script src="script.js"></script>
