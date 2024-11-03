@@ -88,6 +88,11 @@ section {
   width: 100%;
 }
 
+body.dark-mode .about-link::before,
+body.dark-mode .contact-link::before {
+  background: white;
+}
+
 /* Hero Section */
 .hero {
   display: flex;
@@ -162,8 +167,28 @@ body.dark-mode .hero h1 {
   color: var(--text-dark);
 }
 
-/* About and Contact sections */
-.about,
+/* About Section */
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: -14rem;
+}
+
+.about h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.about p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin-bottom: 2rem;
+}
+
+/* Contact Section */
 .contact {
   display: flex;
   flex-direction: column;
@@ -172,13 +197,11 @@ body.dark-mode .hero h1 {
   text-align: center;
 }
 
-.about h2,
 .contact h2 {
   font-size: 3rem;
   margin-bottom: 1rem;
 }
 
-.about p,
 .contact p {
   font-size: 1.2rem;
   max-width: 600px;
