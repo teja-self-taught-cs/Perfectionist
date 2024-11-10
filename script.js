@@ -27,22 +27,8 @@ if (!toggle) {
   console.error("Theme toggle element not found!");
 }
 
-// Check for saved user preference or use system preference
-try {
-  const savedTheme = localStorage.getItem("theme");
-  if (
-    savedTheme === "dark" ||
-    (!savedTheme && getSystemThemePreference() === "dark")
-  ) {
-    setTheme(true);
-  }
-} catch (error) {
-  console.error("Error accessing localStorage:", error);
-  // Fallback to system preference if localStorage is not accessible
-  if (getSystemThemePreference() === "dark") {
-    setTheme(true);
-  }
-}
+// Always set the theme to light mode on page load
+setTheme(false); // Set to light mode by default
 
 // Toggle dark mode on click
 toggle?.addEventListener("click", () => {
@@ -63,3 +49,9 @@ window
       setTheme(event.matches);
     }
   });
+
+window.addEventListener("scroll", () => {
+  const scrolled = window.pageYOffset;
+  const background = document.querySelector(".hero-background");
+  background.style.transform = `translateY(${scrolled * 0.5}px)`;
+});
