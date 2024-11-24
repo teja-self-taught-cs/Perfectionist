@@ -101,11 +101,6 @@ section {
   width: 100%;
 }
 
-/* body.dark-mode .about-link::before,
-body.dark-mode .contact-link::before {
-  background: white;
-} */
-
 /* Hero Section */
 .hero-container {
   position: relative;
@@ -119,7 +114,7 @@ body.dark-mode .contact-link::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("/sachin-singh-eg3H8kvqN9s-unsplash.jpg");
+  background-image: url("/images/iswanto-arif-PNAD9NjsYb4-unsplash.jpg");
   background-size: cover;
   background-position: center;
   transform: translateZ(0);
